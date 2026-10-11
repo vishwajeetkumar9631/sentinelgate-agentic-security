@@ -82,3 +82,5 @@ Risk orchestrator → ALLOW | QUARANTINE | BLOCK + evidence + signed decision
 ```
 
 Security controls for a real deployment: content size/time limits; sandboxed parsers; SSRF-safe retrieval; tenant isolation; no secrets in LLM context; least-privilege, user-confirmed tool calls; immutable logs; rule/model versioning; adversarial regression suite; and human review for high-risk/low-confidence decisions.
+https://github.com/vishwajeetkumar9631/sentinelgate-agentic-security/blob/main/sentinelgate_vishwajeet_hackathon_submission.mp4
+

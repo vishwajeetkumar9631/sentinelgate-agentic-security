@@ -40,6 +40,7 @@ VIDEO_CONTENT_REVIEW.md
 deck_assets/
 deck_render/
 deck_render_final/
+deck_render_*/
 *_contact_sheet.png
 *_storyboard.png
 *_poster.png

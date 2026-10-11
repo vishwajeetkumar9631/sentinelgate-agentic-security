@@ -7,6 +7,8 @@ from __future__ import annotations
 import hashlib, hmac, json, math, os, re, secrets
 from pathlib import Path
 
+_PROCESS_DEMO_SIGNING_KEY=secrets.token_bytes(32)
+
 ATTACK_SEEDS={
  'Instruction Override':'ignore earlier instructions override policy forget rules',
  'Role Change':'act as a different persona developer mode unrestricted assistant',
@@ -36,13 +38,13 @@ def content_fingerprint(value):
 class DecisionSigner:
     """HMAC-sign policy decisions so downstream agents cannot alter them.
 
-    Deployments must set SENTINELGATE_SIGNING_KEY.  The local fallback is
-    intentionally labelled as demo-only in the returned metadata.
+    Deployments must set SENTINELGATE_SIGNING_KEY. The local demo uses an
+    ephemeral process-only key, so no signing credential is stored in source.
     """
     def __init__(self):
         configured=os.getenv('SENTINELGATE_SIGNING_KEY')
-        self.secret=(configured or 'sentinelgate-local-demo-key-change-me').encode('utf-8')
-        self.key_id='env-v1' if configured else 'demo-local-v1'
+        self.secret=configured.encode('utf-8') if configured else _PROCESS_DEMO_SIGNING_KEY
+        self.key_id='env-v1' if configured else 'demo-ephemeral-v1'
     def sign(self,payload):
         body=json.dumps(payload,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode('utf-8')
         return hmac.new(self.secret,body,hashlib.sha256).hexdigest()

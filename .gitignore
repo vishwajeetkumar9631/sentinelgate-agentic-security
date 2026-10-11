@@ -24,6 +24,7 @@ narration_clips/
 
 # Large rendered video outputs (publish through the hackathon portal or a GitHub Release)
 *.mp4
+!sentinelgate_vishwajeet_hackathon_submission.mp4
 
 # Local-only video, narration, and presentation/PDF production scripts
 build_submission_deck.py

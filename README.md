@@ -8,8 +8,9 @@ Working hackathon prototype for **Problem 2: Agentic Cybersecurity – Prompt In
 - **Event:** ET AI Hackathon: Agentic Edition, presented by Accenture
 - **Project:** SentinelGate — Zero-Trust Prompt Injection Firewall
 - **Pitch deck:** [PowerPoint](Vishwajeet_Kumar_SentinelGate_Pitch_Deck.pptx) · [PDF](Vishwajeet_Kumar_SentinelGate_Pitch_Deck.pdf)
+- **Final narrated demo:** [Watch or download the submission video](sentinelgate_vishwajeet_hackathon_submission.mp4)
 
-The narrated demonstration video is distributed separately through the hackathon submission portal or a GitHub Release so normal repository clones remain lightweight.
+The repository contains only the final narrated submission video. Video-editing, narration-generation, and rendering scripts are intentionally excluded.
 
 ## Run
 

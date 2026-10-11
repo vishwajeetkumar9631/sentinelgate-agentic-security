@@ -31,6 +31,7 @@ generate_local_neural_narration.py
 generate_video_narration.ps1
 render_hackathon_video.py
 render_narrated_demo.py
+video_narration.json
 
 # Generated presentation/video working assets
 deck_assets/

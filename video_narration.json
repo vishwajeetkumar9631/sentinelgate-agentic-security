@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Participant introduction",
+    "narration": "Hello, my name is Vishwajeet Kumar. I am participating in the ET AI Hackathon, Agentic Edition, presented by Accenture. I am working on Problem Statement Two: Agentic Cybersecurity, Prompt Injection Firewall. I have built SentinelGate, a zero-trust security layer that inspects untrusted content before it can influence an artificial intelligence agent or trigger a real-world action."
+  },
+  {
+    "title": "Problem statement",
+    "narration": "The hackathon brief asks us to detect and neutralize malicious instructions embedded in user input or retrieved data, while allowing legitimate content to pass with minimal disruption. The inputs include messages, web pages, PDFs, email, Markdown, HTML, Word documents, API responses, source code, OCR text, and images. The brief identifies nine attack families, and rewards greater feature coverage, reliable output, responsible artificial intelligence, agentic capability, prototype quality, and clear architecture evidence."
+  },
+  {
+    "title": "What I built",
+    "narration": "SentinelGate combines canonical content extraction, recursive de-obfuscation, deterministic security rules, semantic similarity, provenance checks, multi-turn session state, and immutable intent contracts. In this live example, a legitimate revenue sentence is mixed with an instruction override, a request for the hidden system prompt, and an attempt to steal credentials. The firewall produces a block decision, a risk score, exact findings, confidence, evidence, and a safe downstream route before the agent receives the content."
+  },
+  {
+    "title": "Attack coverage",
+    "narration": "The attack laboratory demonstrates all nine categories from the problem statement: instruction override, role change, secret extraction, tool abuse, credential theft, context poisoning, multi-step jailbreaks, encoded instructions, and indirect prompt injection. The F3 requirement asks for at least seven categories. SentinelGate demonstrates all nine, and explains which detection mechanism triggered each result."
+  },
+  {
+    "title": "Real-time file tracking demo",
+    "narration": "This is the real-time malicious file tracking demonstration. A controlled watch folder represents an enterprise source such as a shared drive, an email drop, or a retrieval pipeline. As files arrive, SentinelGate records the file type, size, timestamp, and SHA two-fifty-six fingerprint. It selects the correct extraction adapter and inspects the canonical content. The first quarterly report is legitimate and is allowed. The supplier portal file is HTML with a malicious instruction hidden from normal view, so it is blocked and moved into quarantine. The customer relationship management response contains a Base sixty-four encoded prompt injection. SentinelGate decodes it, detects the override and secret-extraction request, and quarantines the file. An email then attempts credential theft and is also quarantined. Finally, clean release notes and source code are allowed. The event table displays the real verdict, risk, hash, latency, findings, and quarantine action produced by the project firewall."
+  },
+  {
+    "title": "Neutralization",
+    "narration": "Blocking everything would create unnecessary business disruption. When recovery is safe, SentinelGate removes only malicious instruction chunks and preserves useful business data. The sanitized content is scanned again. If the second scan finds any residual attack, delivery fails closed. This demonstrates both attack neutralization and safe-content preservation."
+  },
+  {
+    "title": "Protected handoff",
+    "narration": "The protected context broker is the enforcement boundary between untrusted content and the agent. A blocked request produces an empty content field, no tool capabilities, and a signed decision. Allowed or safely neutralized information is explicitly wrapped as data, never as instructions. The signature protects the request identifier, risk, content fingerprint, and policy version from tampering."
+  },
+  {
+    "title": "Agentic and tool security",
+    "narration": "Prompt injection can unfold across several turns, so the system anchors the declared session intent and measures drift over time. Safe turns remain allowed, suspicious turns are quarantined, and prohibited objectives are blocked. Agent-proposed tools are checked against server-side permissions, an allowlist, strict argument schemas, destination policy, payload safety, and user authorization. The agent cannot grant itself new permissions. High-risk actions remain disabled until a human explicitly confirms them."
+  },
+  {
+    "title": "Output and audit protection",
+    "narration": "Security continues after model generation. The output guard detects credentials, private keys, personal information, system-prompt reproduction, and a unique honey-canary. Sensitive values are blocked and redacted. Every inspection, tool decision, and output incident is written to a SHA two-fifty-six hash-chained audit ledger, providing traceable and tamper-evident evidence for reviewers and security teams."
+  },
+  {
+    "title": "Evaluation and honest scope",
+    "narration": "The transparent local regression suite contains nineteen hundred cases: nine hundred adversarial samples and one thousand benign samples, using forty-five attack phrasings and ten context wrappers. Thirteen integration tests verify fail-closed delivery, decision signatures, server-bound tool permissions, output redaction, ledger integrity, and real PDF, Word, email, and hidden HTML extraction. These are synthetic regression results, not a production accuracy claim. SentinelGate implements F3 coverage and verifies D2 locally. D3 remains conditional until image OCR is enabled and demonstrated with representative samples."
+  },
+  {
+    "title": "Architecture and conclusion",
+    "narration": "The complete architecture moves from multimodal adapters to canonical extraction, recursive decoding, the detection ensemble, risk orchestration, signed context delivery, least-privilege tool enforcement, output protection, and tamper-evident auditing. This directly supports the working prototype and structural architecture expected by the hackathon. SentinelGate does not ask the agent to secure itself. It removes authority from untrusted content and enforces policy outside the model. I am Vishwajeet Kumar, and this is my solution for the ET AI Hackathon, Agentic Edition, presented by Accenture: inspect before the agent can act."
+  }
+]

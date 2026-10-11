@@ -1,0 +1,49 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Runtime state and audit data
+*.sqlite3
+sentinelgate_sessions.json
+sentinelgate_intents.json
+video_demo_quarantine/
+
+# Downloaded local TTS runtime and generated narration
+piper_local/
+narration_clips/
+*.wav
+
+# Large rendered video outputs (publish through the hackathon portal or a GitHub Release)
+*.mp4
+
+# Generated presentation/video working assets
+deck_assets/
+deck_render/
+deck_render_final/
+*_contact_sheet.png
+*_storyboard.png
+*_poster.png
+handoff_alignment_preview.png
+
+# Superseded local deck export (the repository uses the Pitch_Deck files)
+Vishwajeet_Kumar_SentinelGate_ET_AI_Hackathon.pptx
+Vishwajeet_Kumar_SentinelGate_ET_AI_Hackathon.pdf
+
+# Local source brief and scratch files
+6ab20c4818adf_et_hackathon_detailed_problem_statements_branded.pdf
+The.txt
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

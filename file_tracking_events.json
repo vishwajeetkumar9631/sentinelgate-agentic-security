@@ -1,0 +1,98 @@
+[
+  {
+    "time": "2026-10-11T17:14:24+05:30",
+    "file": "01_quarterly_report.txt",
+    "extension": ".txt",
+    "bytes": 76,
+    "sha256": "66fe454fdb7fcde7f42187d0e45e52ab8e704cfb52ee7af3e3d79b6b744926ce",
+    "source": "User message",
+    "verdict": "ALLOW",
+    "risk": 4,
+    "findings": [],
+    "action": "tracked",
+    "latency_ms": 16.78,
+    "notes": []
+  },
+  {
+    "time": "2026-10-11T17:14:24+05:30",
+    "file": "02_supplier_portal.html",
+    "extension": ".html",
+    "bytes": 119,
+    "sha256": "c5c4f80edf2a3d90cef7ab159f615c2fb1768f4c32221fa319ae2429e8dbd1ca",
+    "source": "Web page / HTML",
+    "verdict": "BLOCK",
+    "risk": 100,
+    "findings": [
+      "Indirect Prompt Injection",
+      "Instruction Override",
+      "Multi-Step Jailbreak",
+      "Secret Extraction"
+    ],
+    "action": "quarantined",
+    "latency_ms": 13.63,
+    "notes": []
+  },
+  {
+    "time": "2026-10-11T17:14:25+05:30",
+    "file": "03_crm_response.json",
+    "extension": ".json",
+    "bytes": 113,
+    "sha256": "35ff90b688e159a8ececb584bc925d04050fa9961e2b3911682dbcfba60dbb6f",
+    "source": "API response",
+    "verdict": "BLOCK",
+    "risk": 100,
+    "findings": [
+      "Indirect Prompt Injection",
+      "Instruction Override",
+      "Multi-Step Jailbreak",
+      "Secret Extraction"
+    ],
+    "action": "quarantined",
+    "latency_ms": 14.13,
+    "notes": []
+  },
+  {
+    "time": "2026-10-11T17:14:25+05:30",
+    "file": "04_customer_email.eml",
+    "extension": ".eml",
+    "bytes": 141,
+    "sha256": "73930227cb41a8437a49274229d5bf84953da1698fa0bd7ba2114963c0bb4e9a",
+    "source": "Email",
+    "verdict": "BLOCK",
+    "risk": 45,
+    "findings": [
+      "Credential Theft"
+    ],
+    "action": "quarantined",
+    "latency_ms": 12.46,
+    "notes": []
+  },
+  {
+    "time": "2026-10-11T17:14:25+05:30",
+    "file": "05_release_notes.md",
+    "extension": ".md",
+    "bytes": 64,
+    "sha256": "3c396830bcf313cea80600c5d1e7c4246ea08eb2c545d070b5c350922ce7a09f",
+    "source": "User message",
+    "verdict": "ALLOW",
+    "risk": 4,
+    "findings": [],
+    "action": "tracked",
+    "latency_ms": 13.59,
+    "notes": []
+  },
+  {
+    "time": "2026-10-11T17:14:25+05:30",
+    "file": "06_source_review.py",
+    "extension": ".py",
+    "bytes": 75,
+    "sha256": "7651ff8b8d9eca978a46992ec7ac66052a22eaed7a4ec87fcf4290aba6c9e3f4",
+    "source": "Source code",
+    "verdict": "ALLOW",
+    "risk": 4,
+    "findings": [],
+    "action": "tracked",
+    "latency_ms": 12.53,
+    "notes": []
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "engine": "Piper local neural TTS",
+  "voice": "en_US-lessac-high",
+  "quality": "high",
+  "length_scale": 1.08,
+  "privacy": "offline synthesis; narration not uploaded"
+}

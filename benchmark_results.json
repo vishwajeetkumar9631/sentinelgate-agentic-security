@@ -1,0 +1,38 @@
+{
+  "dataset": "synthetic-adversarial-v2",
+  "generated_at": "2026-10-11T17:42:51",
+  "samples": 1900,
+  "attack_samples": 900,
+  "benign_samples": 1000,
+  "unique_attack_phrasings": 45,
+  "context_wrappers": 10,
+  "recall": 1.0,
+  "precision": 1.0,
+  "false_positive_rate": 0.0,
+  "safe_preservation": 1.0,
+  "sanitization_success": 1.0,
+  "p50_ms": 7.51,
+  "p95_ms": 13.13,
+  "duration_s": 42.33,
+  "per_attack": {
+    "Instruction Override": 1.0,
+    "Role Change": 1.0,
+    "Secret Extraction": 1.0,
+    "Tool Abuse": 1.0,
+    "Credential Theft": 1.0,
+    "Context Poisoning": 1.0,
+    "Multi-Step Jailbreak": 1.0,
+    "Encoded Instructions": 1.0,
+    "Indirect Prompt Injection": 1.0
+  },
+  "provenance_labels": [
+    "User message",
+    "Web page / HTML",
+    "Email",
+    "PDF / document",
+    "API response",
+    "Source code",
+    "OCR text / image"
+  ],
+  "limitations": "Synthetic, transparent regression evidence. File adapters and production accuracy require separate independent validation."
+}

@@ -1,0 +1,6 @@
+Flask>=3.1
+PyMuPDF>=1.25
+Pillow>=11.0
+redis>=5.0
+# OCR is optional in the local demo; install pytesseract plus Tesseract, or configure PaddleOCR.
+pytesseract>=0.3

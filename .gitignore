@@ -25,6 +25,13 @@ narration_clips/
 # Large rendered video outputs (publish through the hackathon portal or a GitHub Release)
 *.mp4
 
+# Local-only video, narration, and presentation/PDF production scripts
+build_submission_deck.py
+generate_local_neural_narration.py
+generate_video_narration.ps1
+render_hackathon_video.py
+render_narrated_demo.py
+
 # Generated presentation/video working assets
 deck_assets/
 deck_render/

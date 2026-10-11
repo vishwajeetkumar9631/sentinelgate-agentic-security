@@ -16,6 +16,7 @@ __pycache__/
 sentinelgate_sessions.json
 sentinelgate_intents.json
 video_demo_quarantine/
+video_demo_watch/
 
 # Downloaded local TTS runtime and generated narration
 piper_local/
@@ -33,6 +34,7 @@ generate_video_narration.ps1
 render_hackathon_video.py
 render_narrated_demo.py
 video_narration.json
+VIDEO_CONTENT_REVIEW.md
 
 # Generated presentation/video working assets
 deck_assets/
